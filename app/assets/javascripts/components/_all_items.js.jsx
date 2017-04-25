@@ -3,7 +3,7 @@ var AllItems = React.createClass({
     return {items: []}
   },
   componentDidMount(){
-    $.getJSON('/api/v1/items.json',(response) => {this.setState({items: response})});
+    $.getJSON('/',(response) => {this.setState({items: response})});
     // $.getJSON('http://localhost:4000/api/v1/items.json', function (data) {
     //   console.log(data);
     // });
